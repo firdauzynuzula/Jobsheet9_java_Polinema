@@ -1,15 +1,22 @@
+import java.util.Scanner;
+
 public class ArrayNilai11 {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        Scanner input = new Scanner(System.in);
+        int[] nilaiAkhir = new int[10];
         
-        int[] nilai = {80, 85, 90, 75, 88, 92, 78, 84, 89, 95};
-
-        for (int i = 0; i < nilai.length; i++) {
-            if (nilai[i] > 70) {
-                System.out.println("nilai " + nilai[i] + " lulus");
-            } else {
-                System.out.println("nilai " + nilai[i] + " tidak lulus");
-            }
+        // Perulangan untuk menerima inputan
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
+            nilaiAkhir[i] = input.nextInt();
         }
+        
+        // Perulangan untuk menampilkan elemen array
+        System.out.println("\nNilai-nilai yang telah diinputkan:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Nilai ke-" + (i + 1) + ": " + nilaiAkhir[i]);
+        }
+        
+        input.close();
     }
 }
