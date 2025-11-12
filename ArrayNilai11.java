@@ -6,15 +6,15 @@ public class ArrayNilai11 {
         int[] nilaiAkhir = new int[10];
         
         // Perulangan untuk menerima inputan
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.print("Masukkan nilai ke-" + (i) + ": ");
             nilaiAkhir[i] = input.nextInt();
         }
         
         // Perulangan untuk menampilkan elemen array
         System.out.println("\nNilai-nilai yang telah diinputkan:");
         for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai ke-" + (i + 1) + ": " + nilaiAkhir[i]);
+            System.out.println("Nilai ke-" + (i) + ": " + nilaiAkhir[i]);
         }
         
         input.close();
