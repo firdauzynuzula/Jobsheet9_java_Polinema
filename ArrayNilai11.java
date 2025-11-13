@@ -14,7 +14,9 @@ public class ArrayNilai11 {
         // Perulangan untuk menampilkan elemen array
         System.out.println("\nNilai-nilai yang telah diinputkan:");
         for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai ke-" + (i) + ": " + nilaiAkhir[i]);
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa index ke-" + i + " lulus");
+            }
         }
         
         input.close();
