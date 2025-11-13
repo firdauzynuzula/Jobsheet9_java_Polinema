@@ -24,5 +24,5 @@ jawab:
             System.out.println(bil[i]);
         }
 
-4. keluaran dari program tersebut berupa 5 angka atau 5 data,  karena perulangan nya dijalankan ketika 
-    int i = 0. Sedangkan operator yang digunakan adalah <= (kurang dari sama dengan) yang artinya perulangan akan mencetak angka atau output sampai i = 4;
+4. keluaran dari program tersebut akan mencetak 4 angka pertama, lalu terjadi error/exception pada percobaan kelima karena berusaha mengakses indeks yang tidak ada dalam array. 
+Karena array di Java diindeks dari 0 hingga (ukuran - 1), sedangkan kondisi for-loop i <= 4 membuat loop berjalan hingga i = 4, yang berada di luar rentang indeks yang diperbolehkan. Ini menyebabkan error saat berusaha mengakses bil[4].
